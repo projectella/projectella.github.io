@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond:ital@0;1&family=Playfair+Display&display=swap');
 
-
-body, html {
+body, html, #main {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     line-height: 1.5;
@@ -21,6 +20,10 @@ body * {
     box-sizing: border-box;
 }
 
+.hide {
+    display: none !important;
+}
+
 body h1,
 body h2,
 body h3,
@@ -38,17 +41,31 @@ body h6 {
     width: 90%;
     display: flex;
     justify-content: center;
+    border-bottom: solid 1px black;
 }
 
 #title {
+    margin-top: 70px;
     margin-bottom: 40px;
-    padding: 0 10px;
-    width: fit-content;
+    padding: 34px 0 41px 0;
+    width: 87%;
     font-size: 5em;
     text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #c0b283;
-    text-underline-offset: 8px;
+    font-family: 'Playfair Display';
+    border: dashed 2px black;
+}
+
+#ella {
+    color: #ffffff;
+    font-family: dancing script;
+    background: #a3f2dd;
+    padding: 5px 21px;
+    margin-left: 11px;
+    box-shadow: -4px 6px black;
+}
+
+span#will {
+    font-family: dancing script;
 }
 
 body h2 {
@@ -59,13 +76,7 @@ body h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#gallery img {
-    width: 99%;
-    margin-top: 20px;
-    margin-bottom: 3em;
-    box-shadow: 0 0 5px 2px #545350; 
+    width: 95%;
 }
 
 body:after,
@@ -78,31 +89,26 @@ body:after {
     clear: both;
 }
 
+
+element.style {
+}
+body * {
+    box-sizing: border-box;
+}
+user agent stylesheet
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 #letter {
     width: 90%;
     text-align: justify;
     font-size: 2.3em;
-}
-
-#newsletter {
-    width: 90%;
-    font-size: 2.3em;
-    text-align: justify;
-    margin-top: 1em;
-    margin-bottom: 2.5em;
-}
-
-#footer {
-    width: 100%;
-    background: black;
-    color: #7c7c7c;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
-    padding: 15px 10px;
-    font-size: 1.9em;
+    hyphens: auto;
 }
 
 a:link,
@@ -110,4 +116,35 @@ a:visited,
 a:active,
 a:hover {
     color: #1753af;
+}
+
+#lockscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#locknum {
+    width: 72%;
+    font-size: 10em;
+    text-align: center;
+    margin-top: 1em;
+}
+div#hint {
+    font-size: 4em;
+}
+
+input#guess {
+    font-size: 4em;
+    font-family: 'EB Garamond';
+    width: 72%;
+    border: solid 2px black;
+    margin-top: 1em;
+    padding: 12px 30px;
 }
